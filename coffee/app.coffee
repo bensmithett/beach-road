@@ -97,6 +97,9 @@ iterator = ( memo, bullshit ) ->
 _.reduce bullshits, iterator
 
 if todaysBullshit
-  $( 'body' ).append( "Yes! #{ todaysBullshit.name }: #{ todaysBullshit.start } - #{ todaysBullshit.finish }" )
+  $( '.result' ).append( 'Yes' )
+                .after( "<span class='detail'>#{ todaysBullshit.name }: #{ todaysBullshit.start } - #{ todaysBullshit.finish }</span>" )
+  $( 'body' ).addClass( 'yes' )
 else
-  $( 'body' ).append( 'Nope!' )
+  $( '.result' ).append( 'No' )
+  $( 'body' ).addClass( 'no' )
