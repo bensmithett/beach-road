@@ -89,17 +89,22 @@ bullshits = [
 today = moment().format( 'D/M/YYYY' )
 todaysBullshit = null
 
-iterator = ( memo, bullshit ) ->
+iterator = ( bullshit ) ->
   if todaysBullshit is null
     if today == bullshit.date
       todaysBullshit = bullshit
 
-_.reduce bullshits, iterator
+_.each bullshits, iterator
+
+page = document.getElementsByClassName( 'page' )[0]
+result = document.getElementsByClassName( 'result' )[0]
+detail = document.getElementsByClassName( 'detail' )[0]
 
 if todaysBullshit
-  $( '.result' ).append( 'Yes' )
-                .after( "<span class='detail'>#{ todaysBullshit.name }: #{ todaysBullshit.start } - #{ todaysBullshit.finish }</span>" )
-  $( 'body' ).addClass( 'yes' )
+  result.innerHTML = 'Yes'
+  detail.innerHTML = "#{ todaysBullshit.name }: #{ todaysBullshit.start } - #{ todaysBullshit.finish }"
+  page.classList.add( 'yes' )
 else
-  $( '.result' ).append( 'No' )
-  $( 'body' ).addClass( 'no' )
+  result.innerHTML = 'No'
+  page.classList.add( 'no' )
+

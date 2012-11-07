@@ -1,13 +1,12 @@
-@import 'vendor/normalize'
+@import "compass/css3/transition"
 @import 'susy'
+@import 'fonts'
 
 // Susy grid setup
 $total-columns: 8
 $column-width: 4em
 $gutter-width: 1em
 $grid-padding: 1em
-// $container-style: magic
-// $container-width: 960px
 @include border-box-sizing
 
 // Vertical Rhythm
@@ -18,16 +17,22 @@ $round-to-nearest-half-line: true
 
 html
   height: 100%
+  margin: 0
+  padding: 0
 
 body
   background-color: #fff
   color: #fff
+  font-family: 'Nexa Bold', sans-serif
   height: 100%
+  margin: 0
+  padding: 0
   text-align: center
 
 h1
   margin: 0 auto rhythm(1, $base-line-height)
   @include adjust-font-size-to(20px)
+  padding-top: 20px
 
 p
   margin: 0 auto 16px
@@ -35,13 +40,17 @@ p
 .page
   @include container
   min-height: 100%
+  opacity: 0
+  @include transition-property(opacity)
+  @include transition-duration(0.5s)
 
 .yes
   background: red
+  opacity: 1
 
 .no
   background: green
+  opacity: 1
 
 .result
   @include adjust-font-size-to(120px)
-  font-family: 'Lobster', cursive
