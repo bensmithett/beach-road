@@ -1,0 +1,101 @@
+@font-face {
+  font-family: 'Nexa Bold';
+  src: url("/fonts/Nexa_Free_Bold-webfont.eot");
+  src: url("/fonts/Nexa_Free_Bold-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/Nexa_Free_Bold-webfont.woff") format("woff"), url("/fonts/Nexa_Free_Bold-webfont.ttf") format("truetype"), url("/fonts/Nexa_Free_Bold-webfont.svg#nexa_boldregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 14, ../../../../.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/susy-1.0.4/sass/susy/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 61, ../../../../.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+* html {
+  font-size: 100%;
+}
+
+/* line 64, ../../../../.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 16px;
+  line-height: 1.625em;
+}
+
+/* line 18, ../../sass/screen.sass */
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 23, ../../sass/screen.sass */
+body {
+  background-color: white;
+  color: white;
+  font-family: "Nexa Bold", sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* line 32, ../../sass/screen.sass */
+h1 {
+  margin: 0 auto 1em;
+  font-size: 1.25em;
+  line-height: 1.3em;
+  padding-top: 20px;
+}
+
+/* line 37, ../../sass/screen.sass */
+p {
+  margin: 0 auto 16px;
+}
+
+/* line 40, ../../sass/screen.sass */
+.page {
+  *zoom: 1;
+  max-width: 41em;
+  _width: 41em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+  min-height: 100%;
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+/* line 38, ../../../../.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.page:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 47, ../../sass/screen.sass */
+.yes {
+  background: red;
+  opacity: 1;
+}
+
+/* line 51, ../../sass/screen.sass */
+.no {
+  background: green;
+  opacity: 1;
+}
+
+/* line 55, ../../sass/screen.sass */
+.result {
+  font-size: 7.5em;
+  line-height: 1.08333em;
+}
