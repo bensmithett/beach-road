@@ -7,4 +7,4 @@ $ grunt
 ```
 
 Data from [City of Port Phillip events calendar](http://www.portphillip.vic.gov.au/events-calendar.htm) is stored
-in `app.coffee`
+in [`app.coffee`](https://github.com/bensmithett/beach-road/blob/master/coffee/app.coffee)
