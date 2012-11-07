@@ -5,3 +5,6 @@ $ bundle install
 $ npm install
 $ grunt
 ```
+
+Data from [City of Port Phillip events calendar](http://www.portphillip.vic.gov.au/events-calendar.htm) is stored
+in `app.coffee`
